@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Background Change</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            transition: background-color 1s ease; /* Smooth transition for color change */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Array of background colors
+        const colors = ['#FF6347', '#98FB98', '#87CEEB', '#FFD700', '#FF4500'];
+
+        let currentIndex = 0;
+
+        // Function to change the background color
+        function changeBackground() {
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length; // Loop back to 0 after last color
+        }
+
+        // Call changeBackground function every 5 seconds (5000ms)
+        setInterval(changeBackground, 5000);
+
+        // Initial call to set the first background color
+        changeBackground();
+    </script>
+</body>
+</html>
