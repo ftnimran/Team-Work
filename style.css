@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: teal;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    text-align: center;
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    text-align: center;
+    color: tan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
